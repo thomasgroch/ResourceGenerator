@@ -1,5 +1,5 @@
 {
-    "name": "groch/ResourceGenerator",
+    "name": "groch/resource-generator",
     "type": "library",
     "description": "Generate all Structure for a given resource name.",
     "keywords": [
