@@ -1,0 +1,53 @@
+{
+    "name": "groch/ResourceGenerator",
+    "type": "library",
+    "description": "Generate all Structure for a given resource name.",
+    "keywords": [
+        "groch",
+        "ResourceGenerator"
+    ],
+    "homepage": "https://github.com/thomasgroch/ResourceGenerator",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Thomas Letsch Groch",
+            "email": "thomas.groch@gmail.com",
+            "homepage": "https://thomasgroch.com/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "laravel/framework": "5.4.*",
+        "league/fractal": "^0.16.0",
+        "tymon/jwt-auth": "^0.5.12",
+        "illuminate/support": "~5.1",
+        "php" : "~5.6|~7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "~4.0||~5.0||~6.0",
+        "squizlabs/php_codesniffer": "^2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "groch\\ResourceGenerator\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "groch\\ResourceGenerator\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "check-style": "phpcs -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests",
+        "fix-style": "phpcbf -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
