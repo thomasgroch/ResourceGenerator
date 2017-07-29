@@ -42,6 +42,8 @@ class StructureGenerator
     {
         $template = $this->getTemplate($this->fileNameGenerator->getName('Resource', $type));
 
+        $this->file->makeDirectory($path, 0755, true, true);
+
         $path = $path . $this->fileNameGenerator->getName($name, $type) . '.php';
 
         $this->command->info("$path generated");
