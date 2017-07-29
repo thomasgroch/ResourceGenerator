@@ -35,7 +35,17 @@ Via Composer
 $ composer require groch/resource-generator
 ```
 
+Register the service provider in ``` config/app.php ```.
+
+``` php 
+groch\ResourceGenerator\ResourceGeneratorServiceProvider::class,
+```
+
+
 ## Usage
+ 
+Run ``` php artisan ``` to see the new command ``` gen:resource ```.
+
 
 Create components
 ``` bash
@@ -44,7 +54,7 @@ php artisan gen:resource car
 
 Remove components
 ``` bash
-php artisan gen:resource car --delete
+php artisan gen:resource car --delete=1
 ```
 
 ## Change log
