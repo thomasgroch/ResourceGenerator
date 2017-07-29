@@ -38,6 +38,12 @@ Register the service provider in ``` config/app.php ```.
 groch\ResourceGenerator\ResourceGeneratorServiceProvider::class,
 ```
 
+Publish assets from the package.
+
+``` bash
+php artisan vendor:publish --tag=install-resource
+```
+
 
 ## Usage
  
