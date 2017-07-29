@@ -15,16 +15,13 @@ Generate all Structure for a given resource name
 
 Create and remove components of a resource. These include:
 ```
-Model
-Model Facade
-Repository
-Repository Interface
-Repository Facade
 Resourceful Controller
 Migration
 Seeder
 Create Form Request
 Update From Request
+Test
+Transformer
 ```
 
 ## Install
