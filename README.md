@@ -11,6 +11,8 @@
 
 Generate all Structure for a given resource name
 
+Note: The code in this sample was originally written for a user experience prototype and does not necessarily demonstrate how to create production quality code.
+
 ## Structure
 
 Create and remove components of a resource. These include:
