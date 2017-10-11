@@ -17,7 +17,7 @@
         }
     ],
     "require": {
-        "laravel/framework": "^5.*",
+        "laravel/framework": "~5.4",
         "league/fractal": "^0.16.0",
         "tymon/jwt-auth": "^0.5.12",
         "illuminate/support": "~5.1",
