@@ -83,7 +83,7 @@ If you discover any security related issues, please email the author instead of 
 -->
 ## Credits
 
-- [Thomas Letsch Groch]([author-link])
+- [Thomas Letsch Groch]([https://github.com/thomasgroch])
 
 ## License
 
