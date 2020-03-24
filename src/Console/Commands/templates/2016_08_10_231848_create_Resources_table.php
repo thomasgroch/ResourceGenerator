@@ -14,7 +14,7 @@ class CreateResourcesTable extends Migration {
 	{
 		Schema::create('resources', function(Blueprint $table)
 		{
-			$table->increments('id');
+			$table->bigIncrements('id');
 			$table->string('street')->nullable();
 			$table->integer('number')->nullable();
 			$table->string('complement')->nullable();
@@ -24,7 +24,7 @@ class CreateResourcesTable extends Migration {
 			$table->string('state')->nullable();
 			$table->float('latitude')->nullable();
 			$table->float('longitude')->nullable();
-			$table->integer('user_id')->nullable()->unsigned()->index();
+			$table->bigInteger('user_id')->nullable()->unsigned()->index();
 			$table->foreign('user_id')->references('id')->on('users');
 			$table->timestamps();
 			$table->softDeletes();
