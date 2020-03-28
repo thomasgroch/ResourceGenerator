@@ -30,12 +30,14 @@
     "autoload": {
         "psr-4": {
             "groch\\ResourceGenerator\\": "src"
-        }
+        },
+        "exclude-from-classmap": ["/src/Console/Commands/structure_files/"]
     },
     "autoload-dev": {
         "psr-4": {
             "groch\\ResourceGenerator\\": "tests"
-        }
+        },
+        "exclude-from-classmap": ["/src/Console/Commands/structure_files/"]
     },
     "scripts": {
         "test": "phpunit",

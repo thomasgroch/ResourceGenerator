@@ -22,6 +22,7 @@ class ResourceGeneratorServiceProvider extends ServiceProvider
             __DIR__.'/Console/Commands/structure_files/Transformer.php' => app_path('Transformers/Transformer.php'),
             __DIR__.'/Console/Commands/structure_files/helpers' => app_path('../tests/Unit/helpers'),
             __DIR__.'/Console/Commands/structure_files/CrudSave.php' => app_path('Helpers/CrudSave.php'),
+            __DIR__.'/Console/Commands/structure_files/auth.php' => app_path('config/auth.php'),
         ], 'install-resource');
     }
 

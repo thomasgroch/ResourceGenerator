@@ -46,18 +46,31 @@ Publish assets from the package.
 php artisan vendor:publish --tag=install-resource
 ```
 
+Add your `UsersTableSeeder` and move the default "User.php" model to `Model` namespace/folder.
+
+``` bash
+php artisan migrate:fresh --seed
+
+php artisan config:clear
+php artisan config:cache
+composer dump-autoload
+
+php artisan key:generate
+php artisan jwt:secret
+
+```
 
 ## Usage
  
 Run ``` php artisan ``` to see the new command ``` gen:resource ```.
 
 
-Create components
+Generate a new resource
 ``` bash
 php artisan gen:resource car
 ```
 
-Remove components
+Remove a generated resource
 ``` bash
 php artisan gen:resource car --delete=1
 ```

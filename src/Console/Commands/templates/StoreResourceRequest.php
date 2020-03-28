@@ -2,7 +2,9 @@
 
 namespace App\Http\Requests;
 
-class StoreResourceRequest extends FormRequestApi {
+use Illuminate\Foundation\Http\FormRequest;
+
+class StoreResourceRequest extends FormRequest {
 
 	public function rules()
 	{
